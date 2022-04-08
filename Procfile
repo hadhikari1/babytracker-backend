@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar src/main/java/com/wcci/babytracker/BabyTrackerApplication.java -Dserver.port=$PORT
+web: java $JAVA_OPTS src/main/java/com/wcci/babytracker/BabyTrackerApplication.java -Dserver.port=$PORT
