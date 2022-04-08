@@ -1,1 +1,1 @@
-web: java -jar build/libs/baby-tracker-0.0.1-SNAPSHOT.jar
+web: -Dhttp.port=${PORT} ${JAVA_OPTS} java -jar build/libs/baby-tracker-0.0.1-SNAPSHOT.jar
