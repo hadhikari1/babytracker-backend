@@ -8,9 +8,7 @@ plugins {
 
 group = 'com.wcci'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
-
-mainClassName = 'src.main.java.com.wcci.babytracker.BabyTrackerApplication'
+sourceCompatibility = '8'
 
 repositories {
 	mavenCentral()
