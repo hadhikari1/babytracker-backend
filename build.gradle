@@ -1,0 +1,43 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.5'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "com.heroku.sdk.heroku-gradle" version "2.0.0"
+	id 'application'
+}
+
+group = 'com.wcci'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+mainClassName = 'src.main.java.com.wcci.babytracker.BabyTrackerApplication'
+
+repositories {
+	mavenCentral()
+}
+def springfoxVersion = '3.0.0'
+def springfoxUiVersion = '2.9.2'
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-jersey'
+	//spring security
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.70'
+	implementation group: 'org.apache.maven', name: 'maven-model', version: '3.6.1'
+//	runtimeOnly 'com.h2database:h2'
+	implementation 'org.postgresql:postgresql:42.2.6'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	//JWT token
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgres://udewvcifzcizhr:5cd35bbc049611dc1fa37d01a9454bfc14364061230e518895cb621b8cde4e33@ec2-54-173-77-184.compute-1.amazonaws.com:5432/ddjpkdbk7gccf0
+    username: udewvcifzcizhr
+    password: 5cd35bbc049611dc1fa37d01a9454bfc14364061230e518895cb621b8cde4e33
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    properties:
+      hibernate:
+        ddl-auto: update
+        jdbc:
+          lob:
+            non_contextual_creation: true
