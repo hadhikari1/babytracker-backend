@@ -15,7 +15,7 @@
 #            non_contextual_creation: true
 spring:
   datasource:
-    url: postgres://qtyefwqniumhqy:8d74b058dd7635900d83664278b4f773aff7e23e0ab6c0b0175b85a7ae3639a6@ec2-52-3-60-53.compute-1.amazonaws.com:5432/dcskeoukdpm9fr
+    url: jdbc:postgres://qtyefwqniumhqy:8d74b058dd7635900d83664278b4f773aff7e23e0ab6c0b0175b85a7ae3639a6@ec2-52-3-60-53.compute-1.amazonaws.com:5432/dcskeoukdpm9fr
     username: qtyefwqniumhqy
     password: 8d74b058dd7635900d83664278b4f773aff7e23e0ab6c0b0175b85a7ae3639a6
 
@@ -30,5 +30,5 @@ spring:
             non_contextual_creation: true
 
 server:
-  port: 8099
+  port: 5000
 
