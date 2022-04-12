@@ -15,8 +15,7 @@ repositories {
 }
 
 jar {
-	enabled = true
-	archiveClassifier = ''
+	enabled = false
 }
 
 dependencies {
