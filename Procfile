@@ -1,1 +1,0 @@
-web: java $JAVA_OPTS -Dserver.port=$PORT -cp build/libs/baby-tracker-0.0.1-SNAPSHOT.jar
